@@ -1,0 +1,12 @@
+TextWindow.WriteLine("Calculadora de inversión")
+TextWindow.WriteLine("-------------------------")
+TextWindow.WriteLine("Ingrese la cantidad a invertir:")
+cantidad = TextWindow.ReadNumber()
+TextWindow.WriteLine("Ingrese el interés anual (%):")
+interes = TextWindow.ReadNumber()
+TextWindow.WriteLine("Ingrese el número de años:")
+años = TextWindow.ReadNumber()
+
+capital = cantidad * (1 + interes / 100)*años
+
+TextWindow.WriteLine("El capital obtenido después de " + años + " años es: " + capital)
