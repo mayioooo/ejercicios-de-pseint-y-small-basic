@@ -1,0 +1,16 @@
+TextWindow.WriteLine("Calculadora de precio de entrada")
+TextWindow.WriteLine("---------------------------------")
+TextWindow.WriteLine("Ingrese la edad del cliente:")
+edad = TextWindow.ReadNumber()
+
+precio = 0
+
+If edad < 4 Then
+  precio = 0
+ElseIf edad >= 4 And edad <= 18 Then
+  precio = 5
+ElseIf edad > 18 Then
+  precio = 10
+EndIf
+
+TextWindow.WriteLine("El precio de la entrada es: " + precio + "€")
