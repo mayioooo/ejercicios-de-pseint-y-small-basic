@@ -1,0 +1,14 @@
+Algoritmo calculadora
+	Escribir "cual es la cantidad, interes, años, capital"
+	Escribir "ingrese la cantidad"
+	Leer cantidad;
+	Escribir "ingrese el interes"
+	Leer interes;
+	Escribir "cantidad de años"
+	Leer años;
+	Escribir "cantiad de capital"
+	Leer capital;
+	capital<-cantidad * (1 + interes / 100) ^ años;
+	Escribir "el capital obtenido de la inversion es:" , capital;
+	
+FinAlgoritmo
