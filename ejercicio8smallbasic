@@ -1,0 +1,6 @@
+TextWindow.WriteLine("Ingrese la base del triángulo:")
+base = TextWindow.ReadNumber()
+TextWindow.WriteLine("Ingrese la altura del triángulo:")
+altura = TextWindow.ReadNumber()
+area = base * altura / 2
+TextWindow.WriteLine("El área del triángulo es: " + area)
