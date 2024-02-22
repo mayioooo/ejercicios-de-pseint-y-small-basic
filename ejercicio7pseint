@@ -1,0 +1,65 @@
+Algoritmo COMPRA 
+	Definir MOTOS Como Real
+	Definir sexo  Como caracter 
+	Definir llantas Como Caracter
+	Definir descuento, total, moto3,totalg, costoentrada Como Real
+	
+	Escribir "INGRESE EL NOMBRE"
+	Leer nombre
+	
+	Repetir
+		Escribir "Ingrese tu sexo: "
+		Escribir "[M] Masculino "
+		Escribir "[F] Femenino "
+		Leer sexo
+	Hasta Que sexo = "M" o sexo = "F"
+	Repetir
+		Escribir "INGRESE"
+		Escribir "[SD] SIN DEUDA"
+		Escribir "[CD] CON DEUDA"
+		Leer DEUDA
+	Hasta Que DEUDA = "SD" o DEUDA = "CD"
+	Repetir
+		Escribir "Ingresa dia de la semana:"
+		Escribir "[1] Lunes"
+		Escribir "[2] Martes"
+		Escribir "[3] Miercoles"
+		Escribir "[4] Jueves"
+		Escribir "[5] Viernes"
+		Escribir "[6] Sabado"
+		Escribir "[7] Domingo"
+		Leer dia
+	Hasta Que dia >= 1 y dia <= 7
+	
+	Repetir 
+		Escribir "INGRESA LA CANTIDAD DE MOTOS"
+		Leer MOTOS
+	Hasta Que MOTOS <= 0 o MOTOS >= 0
+	
+	descuento<- 0
+	si dia = 2  Entonces
+		descuento <- 0.12
+		costoentrada<-2000
+		
+	FinSi
+	
+	si dia = 6  Entonces
+		descuento <- 0.18
+		costoentrada<-2000
+		
+	FinSi
+	si dia = 7  Entonces
+		descuento <- 0.25
+		costoentrada<-2000
+	FinSi
+	
+	montodescuento <- costoentrada * descuento
+	costofinal <- costoentrada - montodescuento
+	
+	Escribir "Precio regular: S/", costoentrada
+	Escribir "El porcentaje de descuento es:", descuento * 100,"%"
+	Escribir "El descuento es: S/", montodescuento
+	Escribir "El costo final: S/", costofinal
+	
+	
+FinAlgoritmo
