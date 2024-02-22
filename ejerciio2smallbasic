@@ -1,0 +1,21 @@
+TextWindow.WriteLine("Calculadora de rendimiento")
+TextWindow.WriteLine("---------------------------")
+TextWindow.WriteLine("Ingrese la puntuación obtenida (0.0, 0.4, 0.6 o más):")
+puntuacion = TextWindow.ReadNumber()
+
+nivel = "Inaceptable"
+dinero = 0
+
+If puntuacion = 0.0 Then
+  nivel = "Inaceptable"
+  dinero = 0
+ElseIf puntuacion = 0.4 Then
+  nivel = "Aceptable"
+  dinero = 2400 * 0.4
+ElseIf puntuacion >= 0.6 Then
+  nivel = "Meritorio"
+  dinero = 2400 * puntuacion
+EndIf
+
+TextWindow.WriteLine("Su nivel de rendimiento es: " + nivel)
+TextWindow.WriteLine("La cantidad de dinero que recibirá es: " + dinero)
