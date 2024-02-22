@@ -1,0 +1,27 @@
+TextWindow.WriteLine("Operación aritmética: ((3 + 2) ^ 2) / (2 * 5)")
+TextWindow.WriteLine("------------------------------------------------")
+
+' Realizar la operación paso a paso
+a = 3
+b = 2
+c = 2
+d = 5
+
+TextWindow.WriteLine("Paso 1: Sumar 3 y 2")
+resultado1 = a + b
+TextWindow.WriteLine("       " + a + " + " + b + " = " + resultado1)
+
+TextWindow.WriteLine("Paso 2: Elevar el resultado al cuadrado")
+resultado2 = resultado1 * c
+TextWindow.WriteLine("       " + resultado1 + " ^ " + c + " = " + resultado2)
+
+TextWindow.WriteLine("Paso 3: Multiplicar 2 por 5")
+resultado3 = c * d
+TextWindow.WriteLine("       " + c + " * " + d + " = " + resultado3)
+
+TextWindow.WriteLine("Paso 4: Dividir el resultado del paso 2 por el resultado del paso 3")
+resultado_final = resultado2 / resultado3
+TextWindow.WriteLine("       " + resultado2 + " / " + resultado3 + " = " + resultado_final)
+
+TextWindow.WriteLine("------------------------------------------------")
+TextWindow.WriteLine("Resultado final: " + resultado_final)
