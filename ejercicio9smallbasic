@@ -1,0 +1,6 @@
+TextWindow.WriteLine("Ingrese el primer número:")
+num1 = TextWindow.ReadNumber()
+TextWindow.WriteLine("Ingrese el segundo número:")
+num2 = TextWindow.ReadNumber()
+suma = num1 + num2
+TextWindow.WriteLine("La suma de los números es: " + suma)
