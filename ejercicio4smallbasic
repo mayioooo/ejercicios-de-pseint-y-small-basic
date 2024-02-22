@@ -1,0 +1,20 @@
+TextWindow.WriteLine("Calculadora de tipo impositivo")
+TextWindow.WriteLine("--------------------------------")
+TextWindow.WriteLine("Ingrese su renta anual:")
+renta = TextWindow.ReadNumber()
+
+tipo_impositivo = ""
+
+If renta < 10000 Then
+  tipo_impositivo = "5%"
+ElseIf renta >= 10000 And renta < 20000 Then
+  tipo_impositivo = "15%"
+ElseIf renta >= 20000 And renta < 35000 Then
+  tipo_impositivo = "20%"
+ElseIf renta >= 35000 And renta < 60000 Then
+  tipo_impositivo = "30%"
+ElseIf renta >= 60000 Then
+  tipo_impositivo = "45%"
+EndIf
+
+TextWindow.WriteLine("Su tipo impositivo es: " + tipo_impositivo)
