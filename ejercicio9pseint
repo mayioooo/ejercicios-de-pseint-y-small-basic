@@ -1,0 +1,30 @@
+Algoritmo sin_titulo
+	Escribir "ingrese su nombre"
+	leer nombre
+	Repetir
+		
+		Escribir "inserte su edad"
+		leer edad
+	Hasta Que edad <=18 
+	
+	Repetir
+		Escribir "ingrese cual es su promedio general"
+		Leer promedio
+	Hasta Que  promedio <= 10
+	
+	si promedio >= 9
+		Escribir "recibio una cantidad de 3000"
+	FinSi
+	
+	si promedio >= 8
+		Escribir "recibio una cantidad de 2000"
+	FinSi
+	
+	si promedio < 8 y promedio  > 6
+		Escribir "recibio una cantidad de 100"
+	FinSi
+	
+	si promedio < 6
+		Escribir "se les enviara carta de recomendacuion"
+	FinSi
+FinAlgoritmo
