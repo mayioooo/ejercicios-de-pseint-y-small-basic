@@ -1,0 +1,14 @@
+TextWindow.WriteLine("Bienvenido al programa de asignación de grupos")
+TextWindow.WriteLine("-------------------------------------------------")
+TextWindow.WriteLine("Por favor, ingrese su nombre:")
+nombre = TextWindow.Read()
+TextWindow.WriteLine("Por favor, ingrese su sexo (M/F):")
+sexo = TextWindow.Read()
+
+grupo = "B"
+
+If (sexo = "F" And nombre < "M") Or (sexo = "M" And nombre > "N") Then
+  grupo = "A"
+EndIf
+
+TextWindow.WriteLine("Usted ha sido asignado al grupo: " + grupo)
